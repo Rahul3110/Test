@@ -18,6 +18,9 @@
   {{ product.desc }}
 </p>
 
+<p *ngIf="product.desc">
+  {{ product.desc }}
+</p>
 <button (click)="share()">
   Share
 </button>

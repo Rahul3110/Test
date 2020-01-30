@@ -1,0 +1,23 @@
+<!-- <div
+*ngIf="displayName else optional">What is the color of that particular frame</div>
+<ng-template #optional>
+<div>No color is shown</div>
+</ng-template> -->
+
+<div *ngFor="let product of products">
+<h3>
+  <a [title]="product.name + 'details'">
+  {{ product.name}}
+  </a>
+</h3>
+
+<p *ngIf="product.desc">
+  {{ product.desc }}
+</p>
+
+<button (click)="share()">
+  Share
+</button>
+
+
+</div>
